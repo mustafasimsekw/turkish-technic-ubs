@@ -9,11 +9,31 @@ import base64
 
 st.set_page_config(page_title="Turkish Technic | Uçak Bilgi Sistemi", layout="wide")
 
+# --- GÜNCELLENMİŞ CSS BLOĞU ---
 st.markdown("""
     <style>
-    header {visibility: hidden;}
-    #MainMenu {visibility: hidden;}
+    /* 1. GENEL GİZLEME (Alt yazı ve sağ üst menü her yerde gizli) */
     footer {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+
+    /* 2. MASAÜSTÜ & LAPTOP (ThinkBook dahil - 768px ve üstü: Üst çubuk ve ok butonu gizli) */
+    @media (min-width: 768px) {
+        header {visibility: hidden;}
+        [data-testid="collapsedControl"] {display: none !important;}
+    }
+
+    /* 3. MOBİL (767px ve altı: Üst çubuk şeffaf, menü oku görünür) */
+    @media (max-width: 767px) {
+        header {visibility: visible; background-color: transparent;}
+        [data-testid="collapsedControl"] {display: block !important;}
+    }
+
+    /* 4. UÇUŞ LİMİTLERİ (Progress Barları Mavi Yapma) */
+    div[data-testid="stProgress"] > div > div > div > div {
+        background-color: #0056b3 !important;
+    }
+
+    /* 5. DİĞER MEVCUT TASARIM ÖGELERİN */
     [data-testid="stMetricValue"] { font-size: 24px; color: #d32f2f; }
     .stAlert { border-radius: 10px; }
     div.stButton > button { width: 100%; border-radius: 5px; height: 3.5em; background-color: #ffffff; border: 1px solid #ddd; font-weight: bold; }
