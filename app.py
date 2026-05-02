@@ -57,7 +57,7 @@ def check_password():
             .stApp {{
                 background-image: url("{bg_image_css}");
                 background-size: cover;
-                background-position: center 5px; 
+                background-position: center; 
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }}
