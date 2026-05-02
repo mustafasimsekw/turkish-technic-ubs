@@ -430,7 +430,7 @@ if df is not None:
                     st.markdown(f"""
                         <div class="hangar-box occupied">
                             <h4 style='margin:0; color:#bb1114;'>{bay_id}</h4>
-                            <img class="ucak-resmi" src="https://img.freepik.com/premium-vektor/beyaz-arka-planda-izole-edilmis-ucak-ustten-gorunum-vektor-cizimi_338371-1370.jpg">
+                            <img class="ucak-resmi" src="https://northern-aerotech.com/wp-content/uploads/2024/04/airplane-top-view-vector-illustration-isolated-white-background_338371-1370-removebg-preview.png">
                             <b style='font-size:24px;'>{tescil}</b>
                             <p style='margin-top:10px; color:#555; font-weight:bold;'>Çıkış: {bitis_tarihi}</p>
                         </div>
