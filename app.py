@@ -11,43 +11,30 @@ st.set_page_config(page_title="Turkish Technic | Uçak Bilgi Sistemi", layout="w
 
 st.markdown("""
     <style>
-    /* 1. GENEL GİZLEME VE NÜKLEER OPSİYON (Streamlit logolarını kökünden kazıma) */
-    footer, 
-    [data-testid="stBottom"],
-    [data-testid="stToolbar"],
-    [data-testid="stAppViewDeployButton"],
-    [data-testid="stViewerBadge"],
-    .viewerBadge_container,
-    .stDeployButton,
-    div[class*="viewerBadge"] {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        height: 0 !important;
-        width: 0 !important;
-        pointer-events: none !important;
-    }
-    
+    footer {visibility: hidden !important;}
     #MainMenu {visibility: hidden !important;}
+    
+    [data-testid="stAppViewDeployButton"] {display: none !important;}
+    .stDeployButton {display: none !important;}
+    
+    [data-testid="stViewerBadge"] {display: none !important;}
+    .viewerBadge_container {display: none !important;}
+    .viewerBadge_link {display: none !important;}
 
-    /* 2. MASAÜSTÜ & LAPTOP (768px ve üstü: Üst çubuk ve ok butonu gizli) */
     @media (min-width: 768px) {
         header {visibility: hidden !important;}
         [data-testid="collapsedControl"] {display: none !important;}
     }
 
-    /* 3. MOBİL (767px ve altı: Üst çubuk şeffaf, menü oku görünür) */
     @media (max-width: 767px) {
         header {visibility: visible !important; background-color: transparent !important;}
         [data-testid="collapsedControl"] {display: block !important;}
     }
 
-    /* 4. UÇUŞ LİMİTLERİ (Progress Barları Mavi Yapma) */
     div[data-testid="stProgress"] > div > div > div > div {
         background-color: #0056b3 !important;
     }
 
-    /* 5. DİĞER MEVCUT TASARIM ÖGELERİN */
     [data-testid="stMetricValue"] { font-size: 24px; color: #d32f2f; }
     .stAlert { border-radius: 10px; }
     div.stButton > button { width: 100%; border-radius: 5px; height: 3.5em; background-color: #ffffff; border: 1px solid #ddd; font-weight: bold; }
@@ -63,6 +50,8 @@ st.markdown("""
     .customer-logo { width: 60px; height: 60px; object-fit: contain; margin-right: 15px; border-radius: 5px; }
     .customer-name { font-size: 22px; font-weight: bold; margin: 0; color: #333; }
     .customer-note { background-color: #f8f9fa; padding: 15px; border-left: 4px solid #0056b3; border-radius: 4px; font-size: 16px; color: #222; }
+    </style>
+    """, unsafe_allow_html=True)
 
 def get_image_base64(path):
     if os.path.exists(path):
