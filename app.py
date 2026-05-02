@@ -27,8 +27,13 @@ st.markdown("""
     }
 
     @media (max-width: 767px) {
-        header {visibility: visible !important; background-color: transparent !important;}
+        header {
+            visibility: visible !important; 
+            background-color: #f0f2f6 !important; /* Şeffaflığı kaldırdık, kurumsal gri yaptık */
+            border-bottom: 1px solid #ddd !important; /* Altına şık bir sınır çizgisi ekledik */
+        }
         [data-testid="collapsedControl"] {display: block !important;}
+        [data-testid="stToolbarActions"] {display: none !important;} /* Sağ üst ikonlar mobilde de yok */
     }
 
     div[data-testid="stProgress"] > div > div > div > div {
