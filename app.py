@@ -41,11 +41,10 @@ st.markdown("""
     div.stButton > button { width: 100%; border-radius: 5px; height: 3.5em; background-color: #ffffff; border: 1px solid #ddd; font-weight: bold; }
     div.stButton > button:hover { border: 2px solid #d32f2f; color: #d32f2f; background-color: #fffafa; }
 
-    [data-testid="stCaptionContainer"], 
-    .st-emotion-cache-1v07afm { 
-        display: none !important; 
+    [data-testid="InputInstructions"] {
+        display: none !important;
     }
-    
+
     .hangar-box { border-radius: 10px; padding: 20px; text-align: center; margin-bottom: 10px; border: 2px solid #eee; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     .occupied { background-color: #fff5f5; border-color: #d32f2f; }
     .empty { background-color: #f8f9fa; border-color: #ddd; color: #666; }
