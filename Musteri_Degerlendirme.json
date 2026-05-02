@@ -1,0 +1,32 @@
+{
+    "Emirates": {
+        "logo": "https://i.ebayimg.com/images/g/HE0AAOSweyhmrY~4/s-l400.png",
+        "puan": 10,
+        "not": "Çok iyi anlaşıyoruz. En iyi müşterilerimizden biri."
+    },
+    "Qatar Airways": {
+        "logo": "https://images.seeklogo.com/logo-png/36/1/qatar-airways-logo-png_seeklogo-364917.png",
+        "puan": 7,
+        "not": "İşi biliyorlar ama kibirliler. Bazen iletişimde biraz mesafeli davranıyorlar."
+    },
+    "Saudia Airways": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Saudia_logo_2023.png",
+        "puan": 3,
+        "not": "Süreçlere ve prosedürlere hiç hakim değiller."
+    },
+    "SunExpress": {
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2SgaI5xsaSdQl80DTgvKiO9hdfpF1aCKsA&s",
+        "puan": 1,
+        "not": "Sıkıntılı müşteriler. Hep bir sorun yaşıyoruz."
+    },
+    "Pegasus": {
+        "logo": "https://logoeps.com/wp-content/uploads/2013/04/pegasus-airlines-eps-vector-logo.png",
+        "puan": 5,
+        "not": "Bakım hızı konusunda bazen çok baskıcı olabiliyorlar."
+    },
+    "British Airways": {
+        "logo": "https://toppng.com/uploads/preview/british-airways-logo-vector-11573965016tfmfliam5g.jpg",
+        "puan": 8,
+        "not": "Kalite takıntıları var ama para konusunda sıkıntıları yok.\n"
+    }
+}
