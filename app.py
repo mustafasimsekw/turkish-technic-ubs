@@ -32,6 +32,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+def get_image_base64(path):
+    if os.path.exists(path):
+        with open(path, "rb") as f:
+            return base64.b64encode(f.read()).decode()
+    return ""
+ucak_base64 = get_image_base64("ucak.png")
+
 
 def check_password():
     if "password_correct" not in st.session_state:
@@ -430,7 +437,8 @@ if df is not None:
                     st.markdown(f"""
                         <div class="hangar-box occupied">
                             <h4 style='margin:0; color:#bb1114;'>{bay_id}</h4>
-                            <img class="ucak-resmi" src="https://northern-aerotech.com/wp-content/uploads/2024/04/airplane-top-view-vector-illustration-isolated-white-background_338371-1370-removebg-preview.png">
+                            <img class="ucak-resmi" src="data:image/png;base64,{ucak_base64}">
+                            <br>
                             <b style='font-size:24px;'>{tescil}</b>
                             <p style='margin-top:10px; color:#555; font-weight:bold;'>Çıkış: {bitis_tarihi}</p>
                         </div>
