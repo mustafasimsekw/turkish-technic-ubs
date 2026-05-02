@@ -9,21 +9,25 @@ import base64
 
 st.set_page_config(page_title="Turkish Technic | Uçak Bilgi Sistemi", layout="wide")
 
-# --- GÜNCELLENMİŞ CSS BLOĞU ---
 st.markdown("""
     <style>
-    footer {visibility: hidden;}
-    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden !important;}
+    #MainMenu {visibility: hidden !important;}
+    
     [data-testid="stAppViewDeployButton"] {display: none !important;}
     .stDeployButton {display: none !important;}
+    
+    [data-testid="stViewerBadge"] {display: none !important;}
+    .viewerBadge_container {display: none !important;}
+    .viewerBadge_link {display: none !important;}
 
     @media (min-width: 768px) {
-        header {visibility: hidden;}
+        header {visibility: hidden !important;}
         [data-testid="collapsedControl"] {display: none !important;}
     }
 
     @media (max-width: 767px) {
-        header {visibility: visible; background-color: transparent;}
+        header {visibility: visible !important; background-color: transparent !important;}
         [data-testid="collapsedControl"] {display: block !important;}
     }
 
