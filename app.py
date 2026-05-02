@@ -11,6 +11,9 @@ st.set_page_config(page_title="Turkish Technic | Uçak Bilgi Sistemi", layout="w
 
 st.markdown("""
     <style>
+    header {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
     [data-testid="stMetricValue"] { font-size: 24px; color: #d32f2f; }
     .stAlert { border-radius: 10px; }
     div.stButton > button { width: 100%; border-radius: 5px; height: 3.5em; background-color: #ffffff; border: 1px solid #ddd; font-weight: bold; }
